@@ -14,13 +14,13 @@
       </a-assets>
       
       <!-- Room Walls--->
-      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5"></a-plane>
+      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true"></a-plane>
       <a-plane id="left-wall" position="-12.5 4.2 0" scale="25 8.3 0.5" rotation="0 90 0"></a-plane>
       <a-plane id="back-wall" position="0 4.2 12.50" scale="25 8.3 0.5" rotation="0 180 0"></a-plane>
       <a-plane id="right-wall" position="12.5 4.2 0" scale="25 8.3 0.5" rotation="0 270 0"></a-plane>
       
       <!-- Spheres --->
-      <a-sphere radius="1.7" position="-8 1.68 -8" color="red" shader="standard"></a-sphere>
+      <a-sphere radius="1.7" position="-8 1.68 -8" color="red" shader="standard" shadow="cast: true"></a-sphere>
       <a-sphere radius="1.7" position="8 1.68 -8" color="red" shader="standard"></a-sphere>
       
       <a-sphere radius="1.7" position="0 1.68 -6" color="red" shader="standard"></a-sphere>
@@ -31,8 +31,11 @@
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4" visible="true"></a-light> 
-      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadown="receive: true"></a-plane>
+      <a-entity light="type: spot;
+                       intensity: 0.8;
+                       distance: 100;
+                       castShadow: true"></a-entity>
+      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadow="receive: true"></a-plane>
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
       <a-camera>
