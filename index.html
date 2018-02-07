@@ -4,6 +4,7 @@
     <title>The Lights - Test</title>
     <meta name="description" content="Basic Scene - A-Frame">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -14,20 +15,20 @@
       </a-assets>
       
       <!-- Room Walls--->
-      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true"></a-plane>
+      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="cast: true; receive: true"></a-plane>
       <a-plane id="left-wall" position="-12.5 4.2 0" scale="25 8.3 0.5" rotation="0 90 0"></a-plane>
       <a-plane id="back-wall" position="0 4.2 12.50" scale="25 8.3 0.5" rotation="0 180 0"></a-plane>
       <a-plane id="right-wall" position="12.5 4.2 0" scale="25 8.3 0.5" rotation="0 270 0"></a-plane>
       
       <!-- Spheres --->
-      <a-sphere radius="1.7" position="-8 1.68 -8" color="red" shader="standard" shadow="cast: true"></a-sphere>
-      <a-sphere radius="1.7" position="8 1.68 -8" color="red" shader="standard"></a-sphere>
+      <a-sphere radius="1.7" position="-8 1.68 -8" color="red" shader="standard" shadow></a-sphere>
+      <a-sphere radius="1.7" position="8 1.68 -8" color="red" shader="standard" shadow></a-sphere>
       
-      <a-sphere radius="1.7" position="0 1.68 -6" color="red" shader="standard"></a-sphere>
-      <a-sphere radius="1.7" position="0 1.68 6" color="red" shader="standard"></a-sphere>
+      <a-sphere radius="1.7" position="0 1.68 -6" color="red" shader="standard" shadow></a-sphere>
+      <a-sphere radius="1.7" position="0 1.68 6" color="red" shader="standard" shadow=></a-sphere>
       
-      <a-sphere radius="1.7" position="-8 1.68 8" color="red" shader="standard"></a-sphere>
-      <a-sphere radius="1.7" position="8 1.68 8" color="red" shader="standard"></a-sphere>
+      <a-sphere radius="1.7" position="-8 1.68 8" color="red" shader="standard" shadow="cast: true; receive: true"></a-sphere>
+      <a-sphere radius="1.7" position="8 1.68 8" color="red" shader="standard" shadow="cast: true; receive: true"></a-sphere>
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
