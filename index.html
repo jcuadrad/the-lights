@@ -4,6 +4,7 @@
     <title>The Lights - Test</title>
     <meta name="description" content="Basic Scene - A-Frame">
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script>
   </head>
   <body>
     <a-scene>
@@ -29,7 +30,10 @@
       <a-sphere radius="1.7" position="-8 1.68 8" color="red" shader="standard" shadow="cast: true"></a-sphere>
       <a-sphere radius="1.7" position="8 1.68 8" color="red" shader="standard" shadow="cast: true"></a-sphere>
       
-      <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+      <!-- <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky> -->
+      <a-sky color=""></a-sky>
+      <a-entity star-system></a-entity>
+      
       
       <!--Lights -->
       <a-light type="ambient" color="#445451"></a-light>
@@ -39,7 +43,7 @@
                        intensity: 0.4;
                        shadowCameraVisible: true;"
                 position="0 8 0"></a-entity>
-      <a-sphere position=""></a-sphere>
+      <a-sphere position="0 8 0"></a-sphere>
       <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadow="receive: true;"></a-plane>
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
