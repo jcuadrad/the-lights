@@ -30,12 +30,16 @@
       <a-sphere radius="1.7" position="8 1.68 8" color="red" shader="standard" shadow="cast: true"></a-sphere>
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+      
+      <!--Lights -->
       <a-light type="ambient" color="#445451"></a-light>
+      <!-- Moving Light -->
       <a-entity light="type: directional;
                        castShadow: true;
                        intensity: 0.4;
                        shadowCameraVisible: true;"
-                position="0 0 -3"></a-entity>
+                position="0 8 0"></a-entity>
+      <a-sphere position=""></a-sphere>
       <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadow="receive: true;"></a-plane>
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
