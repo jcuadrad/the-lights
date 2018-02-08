@@ -47,7 +47,12 @@
                        shadowCameraRight: 10; 
                        shadowCameraTop: 10"
                 position="-12 9 -12"></a-entity>
-      <a-sphere position="-12 9 -12" shader="flat" radius="0.6" emissive="#ffffff"></a-sphere>
+      <a-sphere position="-12 9 -12" shader="standard" radius="0.6" material="emissiveIntensity: 500; emissive: #FFFFFF;">
+        <a-animation attribute="position"
+                     to="12 9 12"
+                     dur="10000"
+                     repeat="indefinite"></a-animation>
+      </a-sphere>
       <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadow="receive: true;"></a-plane>
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
