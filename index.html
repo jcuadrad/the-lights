@@ -5,6 +5,7 @@
     <meta name="description" content="Basic Scene - A-Frame">
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script>
+    <script src="gsls-shader.js"></script>
   </head>
   <body>
     <a-scene>
@@ -20,14 +21,7 @@
       
       <!-- Room Walls--->
       <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true; cast: false;" 
-               material="src: #wallTexture;
-                         repeat: 2 1;
-                         normal-map: #wallNormalMap;
-                         normal-texture-repeat: 2 1;
-                         ambient-occlusion-map: #wallAmbientOcclusion;
-                         ambient-occlusion-texture-repeat: 2 1;
-                         ambient-occluson-map-intensity: 0.1;
-                         roughness: 1"></a-plane>
+               material="shader: test"></a-plane>
       <a-plane id="left-wall" position="-12.5 4.2 0" scale="25 8.3 0.5" rotation="0 90 0"></a-plane>
       <a-plane id="back-wall" position="0 4.2 12.50" scale="25 8.3 0.5" rotation="0 180 0" color="#4286f4"></a-plane>
       <a-plane id="right-wall" position="12.5 4.2 0" scale="25 8.3 0.5" rotation="0 270 0"></a-plane>
