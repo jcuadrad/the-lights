@@ -7,5 +7,4 @@ The purpuse is to practice with Lights and Shadows, and it's interactions with o
 ## NEXT STEP
 
 - Register GSLS Shader.
-- Give Floor a Normal Map.
 - Continue Moving Light animation.

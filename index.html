@@ -77,7 +77,10 @@
       
       <a-plane material="src: #groundTexture;
                          normal-map: #groundNormalMap;
-                         normal-texture-repeat: 20 20" rotation="-90 0 0" height="100" width="100" repeat="20 20" shadow="receive: true;"></a-plane>
+                         normal-texture-repeat: 20 20;
+                         ambient-occlusion-map: #groundAmbientOcclusion;
+                         ambient-occlusion-texture-repeat: 20 20;
+                         roughness: 0.5;" rotation="-90 0 0" height="100" width="100" repeat="20 20" shadow="receive: true;"></a-plane>
       
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
