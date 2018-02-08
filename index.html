@@ -15,7 +15,7 @@
       </a-assets>
       
       <!-- Room Walls--->
-      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true; cast: false;" color="#4286f4"></a-plane>
+      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true; cast: false;" material="roughness: 0; color: #4286f4"></a-plane>
       <a-plane id="left-wall" position="-12.5 4.2 0" scale="25 8.3 0.5" rotation="0 90 0"></a-plane>
       <a-plane id="back-wall" position="0 4.2 12.50" scale="25 8.3 0.5" rotation="0 180 0" color="#4286f4"></a-plane>
       <a-plane id="right-wall" position="12.5 4.2 0" scale="25 8.3 0.5" rotation="0 270 0"></a-plane>
@@ -30,6 +30,7 @@
       <a-sphere radius="1.7" position="-8 1.68 8" color="red" shader="standard" shadow="cast: true"></a-sphere>
       <a-sphere radius="1.7" position="8 1.68 8" color="red" shader="standard" shadow="cast: true"></a-sphere>
       
+      <!-- Sky -->
       <!-- <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky> -->
       <a-sky color="black"></a-sky>
       <a-entity star-system>
@@ -71,12 +72,15 @@
                      repeat="indefinite">
         </a-animation>
       </a-sphere>
+      
       <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadow="receive: true;"></a-plane>
+      
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
       <a-camera>
         <a-cursor color="#FAFAFA"></a-cursor>
       </a-camera>
+
     </a-scene>
   </body>
 </html>
