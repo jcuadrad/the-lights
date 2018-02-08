@@ -10,7 +10,9 @@
     <a-scene>
       <a-assets>
         <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
-        <img id="groundTexture" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2Fmarble_wood_tile_texture_by_fantasystock.jpg?1518039621968">
+        <img id="groundTexture" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2FTexturesCom_CobblestoneFloor4_1024_albedo.jpg?1518126454193">
+        <img id="groundNormalMap" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2FTexturesCom_CobblestoneFloor4_1024_albedo.jpg?1518126454193">
+        <img id="groundAmbientOcclusion" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2FTexturesCom_CobblestoneFloor4_1024_albedo.jpg?1518126454193">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
       </a-assets>
       
@@ -73,7 +75,7 @@
         </a-animation>
       </a-sphere>
       
-      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="10 10" shadow="receive: true;"></a-plane>
+      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100" repeat="20 20" shadow="receive: true;"></a-plane>
       
       <a-text value="Hello, A-Frame!" color="#BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
       
