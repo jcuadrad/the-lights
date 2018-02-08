@@ -9,15 +9,23 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
         <img id="groundTexture" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2FTexturesCom_CobblestoneFloor4_1024_albedo.jpg?1518126454193">
         <img id="groundNormalMap" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2FTexturesCom_CobblestoneFloor4_1024_normal.jpg?1518126454456">
         <img id="groundAmbientOcclusion" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2FTexturesCom_CobblestoneFloor4_1024_ao.jpg?1518126447374">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        <img id="wallTexture" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-v5.jpg?1518131670947">
+        <img id="wallNormalMap" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-normal.jpg?1518131671630">
+        <img id="wallAmbientOcclusion" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-ambientocclusion.jpg?1518131670353">
       </a-assets>
       
       <!-- Room Walls--->
-      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true; cast: false;" material="roughness: 0; color: #4286f4"></a-plane>
+      <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true; cast: false;" 
+               material="src: #wallTexture;
+                         repeat: 10 0;
+                         normal-map: #wallNormalMap;
+                         normal-texture-repeat: 10 0;
+                         ambient-occlusion-map: #wallAmbientOcclusion;
+                         ambient-occlusion-texture-repeat: 10 0;"></a-plane>
       <a-plane id="left-wall" position="-12.5 4.2 0" scale="25 8.3 0.5" rotation="0 90 0"></a-plane>
       <a-plane id="back-wall" position="0 4.2 12.50" scale="25 8.3 0.5" rotation="0 180 0" color="#4286f4"></a-plane>
       <a-plane id="right-wall" position="12.5 4.2 0" scale="25 8.3 0.5" rotation="0 270 0"></a-plane>
