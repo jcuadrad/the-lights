@@ -4,7 +4,8 @@ My first experiment putting together an [A-Frame](https://aframe.io) scene, a we
 
 The purpuse is to practice with Lights and Shadows, and it's interactions with objects and materials.
 
-## NEXT STEP
+## NEXT STEPS
 
-- Register GSLS Shader.
 - Continue Moving Light animation.
+- Add colored light.
+- Event set: On click, bounce animations 
