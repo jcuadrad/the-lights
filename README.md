@@ -8,4 +8,4 @@ The purpuse is to practice with Lights and Shadows, and it's interactions with o
 
 - Continue Moving Light animation.
 - Add colored light.
-- Event set: On click, bounce animations 
+- Event set: On click, bounce animations for a-sphere + color change.
