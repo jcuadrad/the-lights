@@ -20,6 +20,23 @@
         <img id="wallTexture" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-v5.jpg?1518131670947">
         <img id="wallNormalMap" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-normal.jpg?1518131671630">
         <img id="wallAmbientOcclusion" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-ambientocclusion.jpg?1518131670353">
+        
+        <a-mixin id="progressivecontrolsgazedefault" position="0 0 -0.5" raycaster
+                geometry="primitive: ring;radiusOuter: 0.008; radiusInner: 0.005; segmentsTheta: 32"
+                material="color: #000; shader: flat"
+                super-hands="colliderEvent:raycaster-intersection;
+                             colliderEventProperty:els;
+                             colliderEndEvent:raycaster-intersection-cleared;
+                             colliderEndEventProperty:el;">
+        </a-mixin>
+        <a-mixin id="progressivecontrolspointdefault" line="" raycaster="showLine:true"
+                 super-hands="colliderEvent:raycaster-intersection;
+                              colliderEventProperty:els;
+                              colliderEndEvent:raycaster-intersection-cleared;
+                              colliderEndEventProperty:el;">
+        </a-mixin>
+        <a-mixin id="progressivecontrolstouchdefault" super-hands sphere-collider>
+        </a-mixin>
       </a-assets>
       
       <a-entity progressive-controls></a-entity>
