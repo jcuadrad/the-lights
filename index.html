@@ -6,6 +6,7 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.0.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
     <script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script>
     <script src="glsl-shader.js"></script>
   </head>
@@ -29,13 +30,13 @@
                              colliderEndEvent:raycaster-intersection-cleared;
                              colliderEndEventProperty:el;">
         </a-mixin>
-        <a-mixin id="progressivecontrolspointdefault" line="" raycaster="showLine:true"
+        <a-mixin id="progressivecontrolspointdefault" line="color: #FF00FF" raycaster="showLine:true"
                  super-hands="colliderEvent:raycaster-intersection;
                               colliderEventProperty:els;
                               colliderEndEvent:raycaster-intersection-cleared;
                               colliderEndEventProperty:el;">
         </a-mixin>
-        <a-mixin id="progressivecontrolstouchdefault" super-hands sphere-collider>
+        <a-mixin id="progressivecontrolstouchdefault" raycaster="showLine:true" line="color: #FF00FF" super-hands sphere-collider>
         </a-mixin>
       </a-assets>
       
@@ -52,7 +53,7 @@
       <a-sphere radius="1.7" position="-8 1.68 -8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true;"></a-sphere>
       <a-sphere radius="1.7" position="8 1.68 -8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
       
-      <a-sphere radius="1.7" position="0 1.68 -6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
+      <a-sphere radius="1.7" position="0 1.68 -6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true" event></a-sphere>
       <a-sphere radius="1.7" position="0 1.68 6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
       
       <a-sphere radius="1.7" position="-8 1.68 8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
