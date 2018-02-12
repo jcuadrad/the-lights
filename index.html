@@ -53,7 +53,10 @@
       <a-sphere radius="1.7" position="-8 1.68 -8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true;"></a-sphere>
       <a-sphere radius="1.7" position="8 1.68 -8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
       
-      <a-sphere radius="1.7" position="0 1.68 -6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true" event></a-sphere>
+      <a-sphere radius="1.7" position="0 1.68 -6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true" hoverable
+                event-set__enter="_event: hover-start; color: #75ffde"
+                event-set__leave="_event: hover-end; color: #66f9ff">
+      </a-sphere>
       <a-sphere radius="1.7" position="0 1.68 6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
       
       <a-sphere radius="1.7" position="-8 1.68 8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
