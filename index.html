@@ -5,6 +5,8 @@
     <meta name="description" content="Basic Scene - A-Frame">
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.0.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script>
     <script src="glsl-shader.js"></script>
   </head>
   <body>
@@ -18,6 +20,8 @@
         <img id="wallNormalMap" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-normal.jpg?1518131671630">
         <img id="wallAmbientOcclusion" src="https://cdn.glitch.com/a81931b7-7aa6-4c69-9006-8d0d6e3e70d1%2F11723-ambientocclusion.jpg?1518131670353">
       </a-assets>
+      
+      <a-entity progressive-controls></a-entity>
       
       <!-- Room Walls--->
       <a-plane id="front-wall" position="0 4.2 -12.50" scale="25 8.3 0.5" shadow="receive: true; cast: false;" 
