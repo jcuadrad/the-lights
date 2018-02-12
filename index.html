@@ -30,13 +30,13 @@
                              colliderEndEvent:raycaster-intersection-cleared;
                              colliderEndEventProperty:el;">
         </a-mixin>
-        <a-mixin id="progressivecontrolspointdefault" line="color: #FF00FF" raycaster="showLine:true; objects: .balls"
+        <a-mixin id="progressivecontrolspointdefault" line="color: #FF00FF" raycaster="showLine:true; objects: a-sphere"
                  super-hands="colliderEvent:raycaster-intersection;
                               colliderEventProperty:els;
                               colliderEndEvent:raycaster-intersection-cleared;
                               colliderEndEventProperty:el;">
         </a-mixin>
-        <a-mixin id="progressivecontrolstouchdefault" raycaster="showLine:true; objects: .balls" line="color: #FF00FF" super-hands sphere-collider>
+        <a-mixin id="progressivecontrolstouchdefault" raycaster="showLine:true; objects: a-sphere" line="color: #FF00FF" super-hands sphere-collider>
         </a-mixin>
       </a-assets>
       
@@ -53,7 +53,7 @@
       <a-sphere radius="1.7" position="-8 1.68 -8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true;"></a-sphere>
       <a-sphere radius="1.7" position="8 1.68 -8" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true"></a-sphere>
       
-      <a-sphere class="balls" radius="1.7" position="0 1.68 -6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true" hoverable
+      <a-sphere radius="1.7" position="0 1.68 -6" color="#66f9ff" emissive="#66f9ff" shader="standard" shadow="cast: true" hoverable
                 event-set__enter="_event: hover-start; color: #000000"
                 event-set__leave="_event: hover-end; color: #66f9ff">
       </a-sphere>
