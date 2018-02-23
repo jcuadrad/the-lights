@@ -16,4 +16,5 @@ The purpuse is to practice with Lights and Shadows, and it's interactions with o
 - Continue Moving Light animation, from corner to corner.
 - Event set: On click, bounce animations for a-sphere + color change.
 
+
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/the-lights)
